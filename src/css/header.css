@@ -1,0 +1,38 @@
+@import 'colors.css';
+
+body {
+    /* padding: 20px; ריפוד של 15 פיקסלים */
+    background-color: var(--bg-header); /* צבע רקע מהגדרות הצבעים */
+    color: var(--text-header); /* צבע טקסט מהגדרות הצבעים */
+    font-family: 'Segoe UI', Arial, sans-serif; /* משפחת גופנים */
+    text-align: center; /* יישור טקסט למרכז */
+}
+
+.header {
+    margin: 0;
+    font-size: 25vh; /* גודל גופן 24 פיקסלים */
+    font-weight: bold; /* גופן מודגש */
+    /* margin-bottom: 10px; שוליים תחתונים של 50 פיקסלים */
+}
+
+.menu {
+    display: flex; /* תצוגה גמישה */
+    justify-content: center; /* יישור פריטים למרכז */
+    gap: 3%; /* רווח של 20 פיקסלים בין פריטים */
+    margin-top: 1%; /* שוליים עליונים של 10 פיקסלים */
+    padding-bottom:  2px ; /* ריפוד פנימי של 8 פיקסלים למעלה ולמטה, 15 פיקסלים מימין ומשמאל */
+}   
+
+.menu-item {
+    color: var(--text-header); /* צבע טקסט מהגדרות הצבעים */
+    font-size: 15vh; /* גודל גופן 24 פיקסלים */
+    font-weight: bold; /* גופן מודגש */
+    text-decoration: none; /* ביטול קו תחתון */
+    padding: 0% 2%; /* ריפוד פנימי של 8 פיקסלים למעלה ולמטה, 15 פיקסלים מימין ומשמאל */
+    border-radius: 5px; /* פינות מעוגלות של 5 פיקסלים */
+    transition: background-color 0.3s; /* מעבר צבע רקע חלק במשך 0.3 שניות */
+}
+
+.menu-item:hover {
+    background-color: var(--menu-hover); /* צבע רקע בריחוף מהגדרות הצבעים */
+}

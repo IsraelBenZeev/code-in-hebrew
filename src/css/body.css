@@ -1,0 +1,105 @@
+@import 'colors.css';
+.title{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+    width: 35%;
+    height: 35%;
+    margin: 10px auto; /* מרכז את הקונטיינר */
+    display: flex; /* הוספת flexbox */
+    justify-content: center; /* מרכוז אופקי */
+    align-items: center;    /* מרכוז אנכי */
+    /* background-color: var(--divBackground-color); צבע רקע */
+    text-align: center; /* מרכז את הטקסט */
+    font-family: 'Roboto', sans-serif; /* שינוי הגופן לגופן מודרני */
+}
+
+
+#channelImageLookipod{
+    width: 35%;
+    height: 35%;
+    border-radius: 75%;
+    justify-content: center; /* מרכוז אופקי */
+    align-items: center;    /* מרכוז אנכי */
+}
+#channelImageBina {
+    width: 35%;
+    height: 35%;
+    border-radius: 75%;
+    justify-content: center; /* מרכוז אופקי */
+    align-items: center;    /* מרכוז אנכי */
+}
+
+
+.content {
+    display: flex; /* מאפשר סידור גמיש */
+    flex-direction: row; /* סידור אופקי */
+    justify-content: flex-start; /* שינוי ל-flex-start כדי למרכז */
+    margin: 0 auto;
+    width: 100%; /* תפיסת כל הרוחב */
+    min-height: 100%; /* תפיסת כל הגובה של החלון */
+    text-align: center;
+    position: relative;
+    overflow-x: auto; /* מאפשר גלילה אופקית */
+    scroll-behavior: smooth; /* גלילה חלקה */
+    transition: transform 0.3s ease-in-out; /* אנימציה חלקה */
+    padding: 2%; /* הגדלת הרווח בצדדים */
+    box-sizing: border-box; /* כולל padding ברוחב הכולל */
+}
+
+.content::-webkit-scrollbar {
+    display: none; /* מסתיר את סרגל הגלילה בדפדפנים מבוססי webkit */
+}
+
+.card {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--divBackground-color);
+    border-radius: 10%;
+    flex: 0 0 20%; /* הקטנת הרוחב של כל כרטיסייה */
+    min-width: 200px;
+    max-width: 300px; /* הגבלת הרוחב המקסימלי */
+    margin: 0 10px;
+}
+
+.linkChannel{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.linkChannel:hover {
+    color: var(--link-hover);
+}
+
+button{
+  position: fixed; /* שינוי מ-absolute ל-fixed */
+  top: 50%;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  z-index: 1000;
+  transform: translateY(-50%);
+  padding: 20px;
+  transition: background-color 0.3s;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  width: 60px; /* קביעת רוחב קבוע */
+  height: 60px; /* קביעת גובה קבוע */
+}
+
+button:hover {
+    background-color: rgba(0,0,0,0.1); /* אפקט hover */
+    border-radius: 50%;
+}
+
+.left {
+    left: 10px;
+  }
+  
+  .right     {
+    right: 10px;
+  }
+

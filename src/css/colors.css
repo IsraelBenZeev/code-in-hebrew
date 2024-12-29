@@ -1,0 +1,25 @@
+:root {
+    /* צבעים ראשיים */
+    --primary-color: #09243c;     /* שחור */
+    --text-color: #ffffff;        /* לבן */
+    --secondary-color: #333333;   /* אפור כהה */
+    /* צבעי רקע */
+    --bg-header: var(--primary-color);    /* רקע כותרת עליונה */
+    --bg-body: #ffffff;                   /* רקע תוכן ראשי */
+    --bg-footer: var(--primary-color);  /* רקע כותרת תחתונה */
+    
+    /* צבעי טקסט */
+    --text-header: var(--text-color);     /* טקסט כותרת עליונה */
+    --text-body: #333333;                 /* טקסט תוכן ראשי */
+    --text-footer: var(--text-color);     /* טקסט כותרת תחתונה */
+    
+    /* צבעי תפריט */
+    --menu-hover: var(--secondary-color); /* צבע רקע בריחוף על תפריט */
+    
+    /* צבעי קישורים */
+    --link-color: #09243c;                /* צבע קישורים */
+     --link-hover: #94c3ed;                /* צבע קישורים בריחוף */
+
+     /* צבעי רקעי הדיבים */
+     --divBackground-color: #54aef22f;                /* צבע רקעי הדיבים */
+}
